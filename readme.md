@@ -42,7 +42,7 @@ npm start
 ### Doctors
 
 1. POST /doctors/register: Register a new doctor.
-2. GET /doctors/login: Log in and receive a JWT.
+2. POST /doctors/login: Log in and receive a JWT.
 
 ### Patients
 
