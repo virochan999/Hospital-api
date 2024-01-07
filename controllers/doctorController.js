@@ -40,7 +40,7 @@ export const doctorLogin = async (req, res) => {
     // Generate the jwt token for the doctor login for secure authentication
     const token = jwt.sign(
       { userId: doctor._id, username: doctor.username },
-      `process.env.JWT_SECRET`,
+      `${process.env.JWT_SECRET}`,
       { expiresIn: 3600 }
     )
 
